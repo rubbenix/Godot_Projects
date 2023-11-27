@@ -16,6 +16,8 @@
 [ext_resource type="Texture2D" uid="uid://dugikk0pbhwvv" path="res://Sunny-land-files/Graphical Assets/sprites/player/run/player-run-6.png" id="14_rdk0t"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_lpq4b"]
+radius = 11.0
+height = 28.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vah8v"]
 atlas = ExtResource("2_anjx7")
@@ -94,8 +96,18 @@ animations = [{
 script = ExtResource("1_leo1e")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
 shape = SubResource("CapsuleShape2D_lpq4b")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-9.53674e-07, 0)
+scale = Vector2(0.969697, 1)
 sprite_frames = SubResource("SpriteFrames_r6rls")
 animation = &"Death"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.6, 1.6)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
