@@ -18,5 +18,4 @@ func _physics_process(delta):
 		for wheel in wheels:
 			if wheel.angular_velocity > -max_speed_left:
 				wheel.apply_torque_impulse(-speed * delta * 60)
-#func _restart():
-#	if( )
+				

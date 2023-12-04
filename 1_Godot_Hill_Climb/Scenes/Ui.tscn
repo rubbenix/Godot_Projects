@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://siy4xabhkj7c"]
+
+[ext_resource type="Texture2D" uid="uid://kekg1cgwjwoe" path="res://Images/Pickups/Coin5.png" id="1_xtyfq"]
+
+[node name="UI" type="CanvasLayer"]
+
+[node name="Coin" type="TextureRect" parent="."]
+offset_left = 44.0
+offset_top = 51.0
+offset_right = 121.0
+offset_bottom = 129.0
+texture = ExtResource("1_xtyfq")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="Coin"]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 21.0
+offset_right = 175.0
+offset_bottom = 58.0
