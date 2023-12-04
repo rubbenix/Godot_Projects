@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://lap8o7sc7v40"]
+
+[ext_resource type="Texture2D" uid="uid://dkspgr5kvulvq" path="res://Images/Car/Wheel.png" id="1_6wa40"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_anlhq"]
+radius = 63.0079
+
+[node name="Wheel" type="RigidBody2D" groups=["player", "wheel"]]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_6wa40")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_anlhq")
